@@ -5047,6 +5047,7 @@ EditTag objects\gear\atlas\civilian\hu_civ_car\hu_civ_car.model
 SetField DisappearDistance 255
 SetField BeginFadeDistance 255
 SetField AnimationDistance 255
+SetField NewDamageInfo[0].DamageSections[0].InstantResponses[0].Flags KillsObject
 savetagchanges
 exit
 
@@ -5054,6 +5055,7 @@ EditTag flog\vehicles\mlx\mlx.model
 SetField DisappearDistance 255
 SetField BeginFadeDistance 255
 SetField AnimationDistance 255
+SetField NewDamageInfo[0].DamageSections[1].InstantResponses[0].Flags KillsObject
 savetagchanges
 exit
 
@@ -5061,6 +5063,10 @@ EditTag objects\vehicles\civilian\bus_new\bus_vehicle\bus_vehicle.model
 SetField DisappearDistance 255
 SetField BeginFadeDistance 255
 SetField AnimationDistance 255
+SetField NewDamageInfo[0].DamageSections[0].Flags TakesFullDamageWhenObjectDies
+SetField NewDamageInfo[0].DamageSections[0].InstantResponses[0].TransitionDamageEffect objects\vehicles\damage_effects\large_trans_damage.damage_effect
+SetField NewDamageInfo[0].DamageSections[0].InstantResponses[0].DamageThreshold 0.001
+SetField NewDamageInfo[0].DamageSections[0].InstantResponses[0].Flags KillsObject
 savetagchanges
 exit
 
