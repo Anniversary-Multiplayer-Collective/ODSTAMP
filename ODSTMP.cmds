@@ -5223,6 +5223,54 @@ setargument self_illum_color 2 2 0 1
 savetagchanges
 exit
 
+echo fix Pick up string "hold R to pickup"
+
+Edittag ui\hud\hud_messages.unic
+setstring english ar_swap "Hold \uE445 to swap for\r\n\uE112"
+setstring english be_swap "Hold \uE445 to swap for\r\n\uE126"
+setstring english bs_swap "Hold \uE445 to swap for\r\n\uE116"
+setstring english cc_swap "Hold \uE445 to swap for\r\n\uE117"
+setstring english ex_swap "Hold \uE445 to swap for\r\n\uE11a"
+setstring english fc_swap "Hold \uE445 to swap for\r\n\uE11f"
+setstring english flamethrower_swap "Hold \uE445 to swap for\r\n\uE11d"
+setstring english ham_swap "Hold \uE445 to swap for\r\n\uE120"
+setstring english laz_swap "Hold \uE445 to swap for\r\n\uE12c"
+setstring english mgturret_swap "Hold \uE445 to swap for\r\n\uE122"
+setstring english ml_swap "Hold \uE445 to swap for\r\n\uE124"
+setstring english mp_swap "Hold \uE445 to swap for\r\n\uE123"
+setstring english nd_swap "Hold \uE445 to swap for\r\n\uE125"
+setstring english pp_swap "Hold \uE445 to swap for\r\n\uE129"
+setstring english pturret_swap  "Hold \uE445 to swap for\r\n\uE12b"
+setstring english rl_swap "Hold \uE445 to swap for\r\n\uE12d"
+setstring english sg_swap "Hold \uE445 to swap for\r\n\uE12f"
+setstring english sn_swap "Hold \uE445 to swap for\r\n\uE131"
+setstring english sr_swap "Hold \uE445 to swap for\r\n\uE132"
+setstring english ssmg_swap "Hold \uE445 to swap for\r\n\uE074"
+setstring english ar_pickup "Hold \uE445 to pick up\r\n\uE112"
+setstring english be_pickup "Hold \uE445 to pick up\r\n\uE126"
+setstring english bo_pickup "Hold \uE445 to pick up\r\n\uE115"
+setstring english bs_pickup "Hold \uE445 to pick up\r\n\uE116"
+setstring english cc_pickup "Hold \uE445 to pick up\r\n\uE117"
+setstring english ex_pickup "Hold \uE445 to pick up\r\n\uE11a"
+setstring english fc_pickup "Hold \uE445 to pick up\r\n\uE11f"
+setstring english flamethrower_pickup "Hold \uE445 to pick up\r\n\uE11d"
+setstring english ham_pickup "Hold \uE445 to pick up\r\n\uE120"
+setstring english laz_pickup "Hold \uE445 to pick up\r\n\uE12c"
+setstring english mgturret_pickup "Hold \uE445 to pick up\r\n\uE122"
+setstring english ml_pickup "Hold \uE445 to pick up\r\n\uE124"
+setstring english mp_pickup "Hold \uE445 to pick up\r\n\uE123"
+setstring english nd_pickup "Hold \uE445 to pick up\r\n\uE125"
+setstring english pp_pickup "Hold \uE445 to pick up\r\n\uE129"
+setstring english pturret_pickup "Hold \uE445 to pick up\r\n\uE12b"
+setstring english rl_pickup "Hold \uE445 to pick up\r\n\uE12d"
+setstring english sg_pickup "Hold \uE445 to pick up\r\n\uE12f"
+setstring english sn_pickup "Hold \uE445 to pick up\r\n\uE131"
+setstring english sr_pickup "Hold \uE445 to pick up\r\n\uE132"
+setstring english ssmg_pickup "Hold \uE445 to pick up\r\n\uE074"
+savetagchanges
+exit
+
+
 AddModFiles "workingdir\assets"
 
 SaveModPackage "modsfolder\ODSTAMP.pak"
