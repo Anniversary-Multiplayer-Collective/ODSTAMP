@@ -5271,6 +5271,56 @@ savetagchanges
 exit
 
 
+
+#echo pausemenu
+opencachefile "MCCCampaignMaps\h100.map"
+porttag replace ui\halox\start_menu\panes\common\spinner\left_arrow.bitmap
+porttag replace ui\halox\start_menu\panes\common\spinner\right_arrow.bitmap
+porttag replace ui\halox\start_menu\panes\common\start_menu_emblems_ui.bitmap
+porttag replace ui\halox\start_menu\panes\game_editor\controller_ui.bitmap
+porttag replace ui\halox\start_menu\panes\settings_controls_button\buttons_ui.bitmap
+porttag replace ui\halox\start_menu\panes\settings_controls_thumbstick\thumbsticks_ui.bitmap
+porttag replace ui\halox\start_menu\panes\settings_display\calibration_range_ui.bitmap
+porttag replace ui\halox\start_menu\panes\settings\settings_ui.bitmap
+porttag replace ui\halox\start_menu\player_gradient.bitmap
+porttag replace ui\halox\start_menu\ring_o_light.bitmap
+porttag replace ui\halox\start_menu\shadow_ui.bitmap
+porttag replace ui\halox\start_menu\start_menu_background.bitmap
+porttag replace ui\halox\start_menu\tab_hq_ui.bitmap
+porttag replace ui\halox\start_menu\uooper_shadow_ui.bitmap
+porttag replace ui\halox\carnage_report\carnage_playerlist_diagonals.bitmap
+porttag replace ui\halox\carnage_report\carnage_playerlist_short_diagonals.bitmap
+porttag replace ui\halox\common\common_bitmaps\selection_bkd_gradient.bitmap
+porttag replace ui\halox\common\roster\base_color_long.bitmap
+porttag replace ui\halox\dialog\dialog_top_diagonals.bitmap
+porttag replace ui\halox\director\black_gradient.bitmap
+porttag replace ui\halox\director\camera_list_diagonals.bitmap
+porttag replace ui\halox\main_menu\white_gradient_bar.bitmap
+porttag replace ui\halox\main_menu\white_gradient_bar_heavy.bitmap
+porttag replace ui\halox\scoreboard\player_ui.bitmap
+porttag replace ui\halox\scoreboard\scoreboard_ui.bitmap
+porttag replace ui\halox\common\common_bitmaps\black_50.bitmap
+porttag replace ui\halox\common\common_bitmaps\black_25.bitmap
+porttag replace ui\halox\common\common_bitmaps\third_column.bitmap
+exit
+
+
+Edittag ui\halox\start_menu\start_menu.gui_screen_widget_definition
+SetField GroupWidgets[0].Definition.BitmapWidgets[1].Definition.Bitmap null
+savetagchanges
+exit
+
+edittag ui\halox\start_menu\common\arrow_ui.bitmap
+importbitmap 0 WorkingDir\bitmaps\arrow_ui.dds
+exit
+
+edittag ui\halox\start_menu\common\arrow2_ui.bitmap
+importbitmap 0 WorkingDir\bitmaps\arrow2_ui.dds
+exit
+
+
+
+
 AddModFiles "workingdir\assets"
 
 SaveModPackage "modsfolder\ODSTAMP.pak"
